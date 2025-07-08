@@ -15,6 +15,11 @@
 yelp_data_search_system/
 |——	data/
 |	|——	yelp_training_set/	# 数据集
+| | |—— PaxHeader/
+| | |—— ._yelp_training_set_business.json
+| | |—— ._yelp_training_set_review.json
+| | |—— yelp_training_set_business.json
+| | |—— yelp_training_set_review.json  # 你需要把下载的yelp_training_set_review.json文件放在这里
 |——	test_data/	# 存放测试样例
 |	|——	faceted_search_test.txt	# 分面搜索样例
 |	|——	test_queries.txt	# 评估模式样例
