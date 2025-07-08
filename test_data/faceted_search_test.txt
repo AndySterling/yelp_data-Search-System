@@ -1,0 +1,4 @@
+query: "I'm in town for business and a buddy who lives in the area suggested this place for dinner tonight"
+city: "Tempe"
+categories ["Hotels & Travel", "Event Planning & Services", "Hotels"]
+min_star: 3.0
