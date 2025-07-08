@@ -13,26 +13,25 @@
 
 ```
 yelp_data_search_system/
-|——	data/
+|—— data/
 |  |——	yelp_training_set/	# 数据集
 |  |  |——  PaxHeader/
 |  |  |——  ._yelp_training_set_business.json
 |  |  |——  ._yelp_training_set_review.json
 |  |  |——  yelp_training_set_business.json
 |  |  |——  yelp_training_set_review.json  # 你需要把下载的yelp_training_set_review.json文件放在这里
-|——	test_data/	# 存放测试样例
-|	|——	faceted_search_test.txt	# 分面搜索样例
-|	|——	test_queries.txt	# 评估模式样例
-|——	evaluator.py	# 评估模式
-|——	faceted_search.py	# 分面搜索
-|——	index_builder.py	# 索引构建
-|——	main.py	# 主程序
-|——	preprocess.py	# 数据预处理
-|——	query_processor.py	# 查询处理
-|——	ranker.py	# 排名函数
-|——	README.md
-|——	requirements.txt	# 环境配置
-|——	yelp_training_set.zip	# 数据压缩包
+|—— test_data/	# 存放测试样例
+|  |——  faceted_search_test.txt	# 分面搜索样例
+|  |——	test_queries.txt	# 评估模式样例
+|—— evaluator.py	# 评估模式
+|—— faceted_search.py	# 分面搜索
+|—— index_builder.py	# 索引构建
+|—— main.py	# 主程序
+|—— preprocess.py	# 数据预处理
+|—— query_processor.py	# 查询处理
+|—— ranker.py	# 排名函数
+|—— README.md
+|—— requirements.txt	# 环境配置
 
 ```
 
