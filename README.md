@@ -43,7 +43,9 @@ yelp_data_search_system/
 
 ### 2.1使用前的环境配置
 
-- 将项目中的 ` yelp_training_set.zip` 解压缩，放入`data`文件夹下，使项目结构和`1.2项目结构`中的结构图保持相同。
+- `通过网盘分享的文件：yelp_training_set_review.json
+链接: https://pan.baidu.com/s/1hHFlZ3KOIrUTq68asbURXQ?pwd=un48 提取码: un48`<br>
+从上述链接中下载评论数据，放入`data`文件夹下（其他数据文件已配置好），使项目结构和`1.2项目结构`中的结构图保持相同。
 
 - 本项目依赖于`nltk`库的`punkt`和`stopwords`，虽然项目中提供了`download_nltk_resource()`函数对必要资源进行检测和自动下载，但我仍建议使用前先手动下载对应的资源。
 - 请确保已安装`requirements.txt`中对应的库。
@@ -89,7 +91,7 @@ python main.py evaluate -qf your_file_path -tk 10
 ```
 
 程序会基于**精确率(precision)**、**召回率(recall)**和**F1分数(f1_score)**进行评估，值得注意的是，在召回率计算中，<br>
-$$recall = \frac{检索到真实相关的评论数量}{相关的评论数量}$$中，分母为所有的伪相关文档数量，而分子最多为命令中输入的`tk(top_k)`值，这意味着分母可能远远大于分子，召回率以及F1分数值会很小，故召回率以及F1分数仅作为参考，一般只关注精确率。
+$$recall = \frac{检索到真实相关的评论数量}{相关的评论数量}$$，分母为所有的伪相关文档数量，而分子最多为命令中输入的`tk(top_k)`值，这意味着分母可能远远大于分子，召回率以及F1分数值会很小，故召回率以及F1分数仅作为参考，一般只关注精确率。
 
 程序会将评估结果输出到`csv`文件中，默认输出路径是`./evaluate`
 
